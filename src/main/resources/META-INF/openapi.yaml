@@ -1,0 +1,17 @@
+openapi: 3.0.3
+info:
+  title: Keycloak authentication Demo
+  description: Keycloak authentication Demo
+  version: 1.0.0
+security:
+- Oauth2:
+  - openid
+components:
+  securitySchemes:
+    Oauth2:
+      type: oauth2
+      flows:
+        implicit:
+          scopes:
+            openid: openId
+paths: {}
